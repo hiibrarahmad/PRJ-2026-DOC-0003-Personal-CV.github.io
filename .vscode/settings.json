@@ -1,0 +1,25 @@
+﻿{
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "xelatex-local",
+      "command": "C:/Users/tika khan/AppData/Local/Programs/MiKTeX/miktex/bin/x64/xelatex.exe",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOC%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "xelatex-local",
+      "tools": [
+        "xelatex-local"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipe.default": "first"
+}

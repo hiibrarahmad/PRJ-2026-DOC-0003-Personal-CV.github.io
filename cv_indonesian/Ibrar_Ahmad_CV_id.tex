@@ -1,0 +1,491 @@
+﻿% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage{fontspec}
+
+% Color for highlights
+\colorlet{awesome}{awesome-red}
+
+% Set boolean value for photo/quote/etc
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Project list formatting: consistent spacing and alignment
+\newenvironment{cvprojitems}{%
+  \begin{justify}
+  \begin{itemize}[leftmargin=2ex, itemsep=0.4ex, topsep=0.3ex, parsep=0pt, partopsep=0pt]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{%
+  \end{itemize}
+  \end{justify}
+}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Ibrar}{Ahmad}
+\position{Insinyur Sistem Tertanam | Perangkat Keras EEG \& Biosensor}
+\address{Peshawar, 25000, Pakistan}
+
+\mobile{(+92) 309-8767-341}
+\email{hiibrarahmad@gmail.com}
+\homepage{https://hiibrarahmad.github.io}
+\github{hiibrarahmad}
+\linkedin{hiibrarahmad}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header
+\makecvheader
+
+% Print the footer with page numbers
+\makecvfooter
+  {\today}
+  {Ibrar Ahmad~~~\textperiodcentered~~~Daftar Riwayat Hidup}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+% SECTION: Summary
+%-------------------------------------------------------------------------------
+\cvsection{Ringkasan Profesional}
+
+\begin{cvparagraph}
+Insinyur perangkat keras tertanam dengan spesialisasi pada desain perangkat keras biosensor/EEG, desain PCB berkecepatan tinggi, integritas sinyal \& daya, pengembangan firmware (C/C++, FreeRTOS, Zephyr RTOS), sistem IoT (ESP32, STM32, nRF52), nRF Connect SDK, Altium Designer, pengembangan perangkat medis, teknologi bioelektroda, integrasi perangkat keras-perangkat lunak, konsultasi teknis, R\&D, dan debugging JTAG.
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+% SECTION: Work Experience
+%-------------------------------------------------------------------------------
+\cvsection{Pengalaman Profesional}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Insinyur Perangkat Keras Biosensor/EEG} % Job title
+    {Niura (MindTune Innovations regional office, Pakistan)} % Organization
+    {Wah Cantt, Pakistan} % Location
+    {Mar. 2025 - Sekarang} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Merancang dan mengembangkan perangkat keras EEG serta sistem bioelektroda dengan fokus pada akuisisi biosinyal yang stabil dan berkualitas tinggi untuk penggunaan nyata}
+        \item {Merekayasa perangkat keras earbud kompak dan PCB multilayer untuk mendukung kebutuhan sensor neural sekaligus keterbatasan perangkat wearable konsumen}
+        \item {Mengembangkan firmware tertanam untuk akuisisi EEG real-time, filtering, serta transmisi nirkabel yang andal dari earbud mini}
+        \item {Mengintegrasikan fitur audio stereo TWS agar perangkat tetap berfungsi sebagai earbud normal sambil mendukung aliran data EEG}
+        \item {Meningkatkan kualitas sinyal melalui tuning perangkat keras, optimasi antarmuka elektroda, reduksi noise, dan pengujian validasi}
+        \item {Melaksanakan verifikasi perangkat keras end-to-end termasuk bring-up, debugging, uji performa, dan penyempurnaan prototipe iteratif}
+        \item {Berkolaborasi lintas tim perangkat keras, firmware, dan produk untuk menghasilkan desain siap produksi yang selaras dengan standar medis dan mutu}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Konsultan Teknis (Remote/Sessional)} % Job title
+    {Zinovaa} % Organization
+    {Remote} % Location
+    {Mei 2025 - Sekarang} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Memberikan konsultasi ahli terkait arsitektur sistem tertanam, keputusan desain perangkat keras, dan strategi optimasi firmware}
+        \item {Membimbing tim pengembangan dalam pemilihan mikrokontroler, sensor, dan komponen yang tepat untuk aplikasi IoT dan wearable}
+        \item {Meninjau dan mengoptimasi skematik serta layout PCB untuk integritas sinyal, distribusi daya, dan manajemen termal}
+        \item {Memberikan arahan implementasi Bluetooth Low Energy (BLE), Wi-Fi, dan LoRa pada sistem IoT nirkabel berbasis ESP32, STM32, dan nRF52}
+        \item {Melakukan sesi troubleshooting jarak jauh menggunakan debugger JTAG, logic analyzer, dan osiloskop untuk menyelesaikan isu perangkat keras kompleks}
+        \item {Memastikan integrasi perangkat keras-perangkat lunak yang kokoh melalui code review, panduan implementasi HAL, dan konfigurasi RTOS}
+        \item {Memberikan arahan strategis terkait praktik terbaik design-for-manufacturing (DFM) dan design-for-testability (DFT)}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Ketua Tim Insinyur Perangkat Keras Tertanam} % Job title
+    {Revive Medical Technologies} % Organization
+    {Rawalpindi, Pakistan} % Location
+    {Feb. 2024 - Mar. 2025} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Memimpin tim PCB dalam desain skematik, layout, fabrikasi, pengujian, dan implementasi untuk proyek perangkat keras tertanam}
+        \item {Mengelola pembuatan BOM dan perencanaan komponen sambil mengawasi alur perakitan serta proses cetak PCB agar memenuhi standar kualitas}
+        \item {Berkoordinasi dengan tim engineering lintas fungsi untuk memastikan milestone perangkat keras tercapai tepat waktu sesuai target proyek}
+        \item {Mengembangkan dan memvalidasi prototipe perangkat keras tertanam melalui bring-up terstruktur, debugging, dan pengujian verifikasi}
+        \item {Membangun simulasi otomasi industri di Factory I/O dan mengintegrasikan logika PLC untuk skenario kontrol proses dunia nyata}
+        \item {Berkontribusi pada peningkatan proses melalui design review, dokumentasi teknis, dan dukungan troubleshooting lintas tim}
+        \item {Mendukung proses serah-terima ke manufaktur dengan memvalidasi file desain, checklist pengujian, dan dokumentasi produksi agar build dapat diulang secara konsisten}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Education
+%-------------------------------------------------------------------------------
+\clearpage
+\cvsection{Pendidikan}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Sarjana Sains Teknik Elektro (Konsentrasi Komputer)} % Degree
+    {COMSATS University Islamabad} % Institution
+    {Islamabad, Pakistan} % Location
+    {Aug. 2019 - Feb. 2024} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Jurusan: Teknik Elektro dengan spesialisasi Sistem Tertanam, Pemrosesan Sinyal Digital, dan Elektronika Daya}
+        \item {Mata kuliah relevan: Sistem Mikroprosesor, Desain FPGA, Sistem Kendali, Pengolahan Citra Digital, Komunikasi Data \& Jaringan Komputer, Otomasi Industri, dan Desain Rangkaian}
+        \item {Mengembangkan keahlian MATLAB, NI LabVIEW, Proteus, dan Altium Designer melalui proyek akademik dan praktikum laboratorium}
+        \item {Proyek tugas akhir: Smart Door Lock System berbasis ESP32-CAM dengan pemrosesan citra teroptimasi dan autentikasi nirkabel}
+        \item {Memperoleh pengalaman langsung menggunakan board pengembangan ARM Cortex-M, ESP32, STM32, dan FPGA}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Higher Secondary School Certificate - Pra-Teknik} % Degree
+    {University College for Boys, Univ. of Peshawar} % Institution
+    {Peshawar, Pakistan} % Location
+    {2017 - 2019} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Mempelajari Matematika, Fisika, dan Kimia dengan fokus pada kemampuan analitis dan pemecahan masalah}
+        \item {Membangun fondasi kuat pada prinsip keteknikan, kalkulus, mekanika, dan metodologi ilmiah}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Secondary School Certificate - Kelompok Sains} % Degree
+    {Islamia Collegiate School} % Institution
+    {Peshawar, Pakistan} % Location
+    {2015 - 2017} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Menyelesaikan studi dasar Matematika, Fisika, Kimia, dan Biologi}
+        \item {Mengembangkan performa akademik yang kuat serta kemampuan berpikir kritis}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Technical Skills
+%-------------------------------------------------------------------------------
+\cvsection{Keahlian Teknis}
+
+\begin{cvskills}
+
+%---------------------------------------------------------
+\cvskill
+    {Sistem Tertanam} 
+    {ESP32, STM32 (Cortex-M3/M4), nRF52 Series, AVR, i.MX8MM MPU, ARM Cortex Architecture, Bare-Metal \& RTOS Programming}
+
+%---------------------------------------------------------
+\cvskill
+    {Pengembangan Firmware} 
+    {C, C++, Embedded C, FreeRTOS, Zephyr RTOS, nRF Connect SDK, HAL/LL Drivers, Bootloader Development, DFU/OTA Updates}
+
+%---------------------------------------------------------
+\cvskill
+    {Desain PCB \& Alat CAD} 
+    {Altium Designer, KiCad, Autodesk Eagle, PADS, Proteus, OrCAD, High-Speed \& Multilayer PCB Design (up to 12 layers)}
+
+%---------------------------------------------------------
+\cvskill
+    {Integritas Sinyal \& Daya} 
+    {Impedance Control, Controlled Routing, Ground Plane Optimization, PDN Analysis, SI/PI Simulation, EMI/EMC Compliance}
+
+%---------------------------------------------------------
+\cvskill
+    {Biosensor \& Perangkat Medis} 
+    {EEG Hardware Design (ADS1299), ECG/PPG Acquisition (MAX86150), Bioelectrode Technology, AFE Design, IEC 60601-1 Compliance}
+
+%---------------------------------------------------------
+\cvskill
+    {Protokol Komunikasi} 
+    {I2C, SPI, UART, USB 2.0/3.0, CAN Bus, BLE 5.x, Wi-Fi (802.11), LoRa, MQTT, WebSocket, Modbus}
+
+%---------------------------------------------------------
+\cvskill
+    {Sistem Nirkabel \& IoT} 
+    {Bluetooth Low Energy (BLE), Nordic nRF52, ESP32 Wi-Fi/BLE, LoRa/LoRaWAN, Wireless Charging (Qi Standard, BQ51003)}
+
+%---------------------------------------------------------
+\cvskill
+    {Otomasi Industri} 
+    {Siemens S7-300/S7-1200 PLC, TIA Portal, Factory I/O, Ladder Logic, SCADA Systems, Process Control}
+
+%---------------------------------------------------------
+\cvskill
+    {Manufaktur \& Pengujian} 
+    {CNC Programming (G-Code), PCB Fabrication, Pick-and-Place Assembly, BOM Management, DFM/DFT, IPC-7351 Standards}
+
+%---------------------------------------------------------
+\cvskill
+    {Alat Debugging Perangkat Keras} 
+    {JTAG/SWD Debuggers, Oscilloscopes (up to 500MHz), Logic Analyzers, Spectrum Analyzers, Thermal Cameras, Multimeters}
+
+%---------------------------------------------------------
+\cvskill
+    {Perangkat Lunak \& Simulasi} 
+    {MATLAB, Simulink, NI LabVIEW, LTspice, ANSYS HFSS, Python (NumPy, SciPy, Matplotlib), Git/GitHub}
+
+%---------------------------------------------------------
+\cvskill
+    {Standar Desain \& Kepatuhan} 
+    {IPC-2221, IPC-7351, IEC 60601-1, ISO 13485, RoHS 3, CE Marking, FDA Class II Device Requirements}
+
+%---------------------------------------------------------
+\cvskill
+    {Manajemen Proyek} 
+    {Agile/Scrum Methodologies, Jira, Confluence, Bitbucket, Cross-functional Team Leadership, Technical Documentation}
+
+%---------------------------------------------------------
+\cvskill
+    {Bahasa} 
+    {Inggris (Profesional), Urdu (Penutur Asli)}
+
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+% SECTION: Key Projects
+%-------------------------------------------------------------------------------
+\cvsection{Proyek Profesional Utama}
+
+\begin{cvparagraph}
+
+\textbf{1. Smartwatch Generasi Baru dengan Pengisian Daya Nirkabel}
+\begin{cvprojitems}
+    \item Merancang arsitektur perangkat keras lengkap untuk wearable canggih berbasis nRF5340 dual-core SoC (ARM Cortex-M33).
+    \item Mengimplementasikan receiver pengisian daya nirkabel BQ51003 dengan PMIC ADP5360 untuk manajemen daya yang optimal.
+    \item Mengintegrasikan MAX86150 untuk pengukuran ECG, PPG, dan SpO\textsubscript{2} dengan akurasi tingkat klinis.
+    \item Mengembangkan sistem layar ganda: IPS LCD 1.54" untuk UI interaktif + E-Ink berdaya rendah untuk tampilan always-on.
+    \item Menambahkan sensor lingkungan BME680 (suhu, kelembapan, tekanan) dan CCS811 (monitoring kualitas udara).
+    \item Mendesain integrasi IMU ICM-20689 6-axis untuk pelacakan gerak dan pengenalan gestur.
+    \item Mencapai konsumsi arus rata-rata <30mA dengan ketahanan baterai 7 hari pada baterai LiPo 300mAh.
+    \item Mengimplementasikan stack Nordic BLE 5.2 dengan DFU over-the-air yang aman.
+\end{cvprojitems}
+
+\textbf{2. Earbud True Wireless Stereo (TWS) dengan Jieli IC}
+\begin{cvprojitems}
+    \item Mengembangkan desain PCB lengkap untuk earbud TWS menggunakan audio SoC Jieli Bluetooth 5.0.
+    \item Mengimplementasikan pemrosesan audio lanjutan dengan ANC (Active Noise Cancellation) dan ENC (Environmental Noise Cancellation).
+    \item Mendesain charging case kompak dengan kemampuan pengisian nirkabel dan sistem manajemen baterai.
+    \item Mencapai latensi audio rendah <60ms untuk aplikasi gaming dan video.
+    \item Mengoptimasi desain antena untuk konektivitas Bluetooth yang stabil hingga jarak 10 meter.
+\end{cvprojitems}
+
+\textbf{3. Smart Earbuds dengan EEG Sensing}
+\begin{cvprojitems}
+    \item Mempelopori desain inovatif yang mengintegrasikan sensor EEG dry-electrode ke dalam form factor earbud TWS.
+    \item Mengembangkan rangkaian akuisisi biopotensial dengan noise floor <1\ensuremath{\mu}V untuk deteksi sinyal neural in-ear.
+    \item Mengimplementasikan algoritma analisis mood/emosi real-time berbasis machine learning pada MCU tertanam.
+    \item Membuat sistem penyesuaian audio dinamis yang merespons kondisi emosi terdeteksi.
+    \item Mendesain PCB mini dengan isolasi RF antara Bluetooth dan frontend EEG analog.
+\end{cvprojitems}
+
+\textbf{4. Perangkat Keras Medis (SDCM-II, DermScope, UV Curing Chamber)}
+\begin{cvprojitems}
+    \item \textit{Stent Drug Coating Machine II (SDCM-II)}: Merancang elektronika kontrol gerak presisi dengan driver stepper motor dan closed-loop feedback untuk pelapisan farmasi otomatis.
+    \item \textit{DermScope}: Mengembangkan perangkat pencitraan medis kompak dengan antarmuka kamera resolusi tinggi, kontrol pencahayaan LED, dan transfer data USB 2.0.
+    \item \textit{UV Curing Chamber}: Merekayasa sistem kontrol tertanam dengan regulasi suhu presisi, monitoring intensitas UV, dan manajemen siklus curing otomatis.
+    \item Seluruh proyek dirancang dengan isolasi keselamatan IEC 60601-1 dan komponen kelas medis.
+\end{cvprojitems}
+
+\textbf{5. Smartwatch NRF Kompak 49\,$\times$\,49 mm}
+\begin{cvprojitems}
+    \item Mendesain PCB smartwatch ultra-kompak berbasis nRF52832 SoC dan layar OLED 0.96".
+    \item Mengimplementasikan teknik miniaturisasi agresif termasuk via-in-pad dan teknologi HDI.
+    \item Mencapai ketebalan total PCB <2mm termasuk perakitan baterai dan layar.
+    \item Mengoptimasi konsumsi daya: <50\ensuremath{\mu}A saat deep sleep dan <5mA saat koneksi BLE aktif.
+\end{cvprojitems}
+
+\textbf{6. Perangkat Wearable Mouthguard Atletik}
+\begin{cvprojitems}
+    \item Mengembangkan wearable berbasis NRF yang ditanam pada mouthguard atletik untuk pemantauan kesehatan real-time.
+    \item Mengintegrasikan sensor suhu, SpO\textsubscript{2}, gaya gigitan (FSR), dan akselerometer 3-axis untuk deteksi benturan.
+    \item Mendesain enclosure tahan air dan tahan benturan dengan material biokompatibel.
+    \item Mengimplementasikan komunikasi BLE untuk streaming data real-time ke aplikasi mobile.
+    \item Membuat charging dock kustom dengan antarmuka pogo-pin untuk pengisian ulang baterai.
+\end{cvprojitems}
+
+\textbf{7. Sistem Pemrosesan Data EEG OpenBCI}
+\begin{cvprojitems}
+    \item Mengembangkan firmware kustom untuk board OpenBCI berbasis ADS1299 dengan akuisisi EEG 8 kanal.
+    \item Mengimplementasikan protokol komunikasi SPI dengan laju sampling 16kSPS pada seluruh kanal.
+    \item Membuat pipeline pemrosesan data berbasis Python untuk analisis gelombang otak real-time (alpha, beta, theta, delta).
+    \item Mengintegrasikan algoritma machine learning untuk deteksi artefak dan klasifikasi sinyal.
+\end{cvprojitems}
+
+\textbf{8. Bootloader Kustom DFU/OTA untuk nRF52840}
+\begin{cvprojitems}
+    \item Mengembangkan bootloader aman untuk Adafruit nRF52840 Sense agar mendukung pembaruan firmware over-the-air.
+    \item Mengimplementasikan verifikasi tanda tangan kriptografis menggunakan library mbedTLS.
+    \item Membuat manajemen memori flash dual-bank untuk mekanisme pembaruan fail-safe.
+    \item Mencapai waktu pembaruan <30 detik untuk image firmware 512KB.
+\end{cvprojitems}
+
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+% SECTION: Final Year Project
+%-------------------------------------------------------------------------------
+\cvsection{Proyek Tugas Akhir}
+
+\begin{cventries}
+
+\vspace{2pt}
+\cventry
+    {Ketua Tim \& Perancang Perangkat Keras} % Role
+    {Sistem Kunci Pintu Pintar} % Project Title
+    {COMSATS University Islamabad} % Institution
+    {Aug. 2022 - Jul. 2023} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Mengembangkan sistem kunci pintu pintar terintegrasi menggunakan ESP32-CAM dan ESP32 untuk kontrol akses dan pemantauan nirkabel}
+        \item {Mengimplementasikan library TJpeg untuk streaming video real-time 25 FPS dengan kompresi citra yang teroptimasi}
+        \item {Mendesain mekanisme penguncian modular yang kompatibel dengan pintu eksisting menggunakan solenoid lock dan aktuasi berbasis servo}
+        \item {Mengintegrasikan komunikasi audio dua arah menggunakan mikrofon digital I2S dan rangkaian amplifier}
+        \item {Mengembangkan sistem autentikasi kustom yang mendukung RFID, sidik jari, dan pembukaan berbasis aplikasi mobile}
+        \item {Membuat antarmuka pengguna intuitif pada TFT LCD 3.5" yang menampilkan video langsung dan informasi pengunjung}
+        \item {Mengimplementasikan mode daya rendah dengan arus standby <100mA dan kemampuan wake-up instan}
+        \item {Mendesain PCB dengan catu daya terintegrasi (5V/2A), modul ESP32, dan antarmuka periferal}
+        \item {Berhasil mendemonstrasikan sistem dengan waktu respons autentikasi <1 detik dan akurasi pengenalan 99\%}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Open Source Contributions
+%-------------------------------------------------------------------------------
+\cvsection{Kontribusi Open Source}
+
+\begin{cventries}
+
+\vspace{2pt}
+\cventry
+    {Maintainer \& Pembuat} % Role
+    {Library Komponen Altium Kustom} % Project Title
+    {GitHub - Repositori Publik} % Platform
+    {Berjalan} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Mengembangkan library komponen Altium Designer komprehensif berisi 500+ komponen yang dioptimasi untuk desain PCB cepat}
+        \item {Setiap komponen disimpan pada file terpisah dengan struktur modular untuk integrasi mudah dan version control}
+        \item {Memastikan kepatuhan 100\% terhadap RoHS 3 dengan dokumentasi lingkungan dan keselamatan yang rinci}
+        \item {Mendesain footprint sesuai standar IPC-7351B dengan toleransi manufaktur yang diverifikasi melalui DRC}
+        \item {Memprioritaskan kompatibilitas dengan JLCPCB Parts Library untuk fabrikasi dan pengadaan komponen yang lancar}
+        \item {Menyertakan model 3D untuk verifikasi jarak mekanik yang akurat pada Altium 3D viewer}
+        \item {Dikelola aktif dengan pembaruan dua mingguan untuk menambah komponen terbaru dan memperbaiki isu yang dilaporkan}
+        \item {Mendapatkan 100+ stars serta kontribusi dari komunitas sistem tertanam di berbagai negara}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Certifications
+%-------------------------------------------------------------------------------
+\cvsection{Sertifikasi Profesional}
+
+\begin{cvhonors}
+
+\cvhonor
+    {Insinyur Elektro Terdaftar PEC} % Title
+    {Nomor Registrasi: ELECT/107509} % Details
+    {Pakistan Engineering Council (PEC)} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {Certified PCB Designer} % Title
+    {Penyelesaian Altium Education PCB Basic Design Course (Kredensial: cert\_c8lmf4pd)} % Details
+    {Altium} % Issuer
+    {Sep. 2023} % Year
+
+\cvhonor
+    {Learn Altium Essentials -- Second Edition} % Title
+    {Teknik Desain PCB Lanjutan dan Praktik Terbaik} % Details
+    {Altium} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {Desain PCB High-Speed \& Multi-layer} % Title
+    {Teknik lanjutan untuk integritas sinyal dan kontrol impedansi} % Details
+    {Sertifikasi Online} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {Spesialis Integritas Sinyal \& Daya} % Title
+    {Kursus Lanjutan Analisis SI/PI untuk Perancang PCB} % Details
+    {Sintecs Training Program} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {Dasar-dasar nRF Connect SDK} % Title
+    {Pelatihan praktis pada platform IoT milik Nordic Semiconductor} % Details
+    {Nordic Semiconductor Academy} % Issuer
+    {2025} % Year
+
+\cvhonor
+    {Pengantar IoT} % Title
+    {Dasar-dasar arsitektur dan aplikasi Internet of Things} % Details
+    {Cisco Networking Academy} % Issuer
+    {Mar. 2024} % Year
+
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+% SECTION: Key Achievements
+%-------------------------------------------------------------------------------
+\clearpage
+\cvsection{Pencapaian Utama \& Pengakuan}
+
+\begin{cvhonors}
+
+\cvhonor
+    {Kepemimpinan Tim} % Category
+    {Memimpin tim lintas fungsi beranggotakan 5 engineer untuk menyelesaikan 10+ proyek perangkat medis tepat waktu dan sesuai anggaran} % Achievement
+    {} % Organization
+    {2024-2025} % Year
+
+\cvhonor
+    {Peningkatan Proses} % Category
+    {Menurunkan cacat manufaktur PCB sebesar 40\% melalui penerapan standar DFM/DFT dan design review otomatis} % Achievement
+    {} % Organization
+    {2024} % Year
+
+\cvhonor
+    {Keberhasilan Freelance} % Category
+    {Menyelesaikan 15+ proyek Upwork dengan tingkat kepuasan klien 100\% dan rata-rata ulasan 5.0/5.0} % Achievement
+    {} % Organization
+    {2024-2025} % Year
+
+\cvhonor
+    {Dampak Open Source} % Category
+    {Library komponen Altium memperoleh 100+ GitHub stars dan diadopsi oleh developer di 15+ negara} % Achievement
+    {} % Organization
+    {2024-2025} % Year
+
+\cvhonor
+    {Inovasi Teknis} % Category
+    {Mempelopori integrasi sensor EEG ke form factor earbud TWS untuk audio responsif terhadap emosi} % Achievement
+    {} % Organization
+    {2025} % Year
+
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+\end{document}

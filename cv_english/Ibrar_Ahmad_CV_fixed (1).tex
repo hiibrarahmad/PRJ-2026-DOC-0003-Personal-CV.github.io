@@ -1,0 +1,490 @@
+﻿% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass[11pt,a4paper]{awesome-cv}
+\usepackage{fontspec}
+
+% Color for highlights
+\colorlet{awesome}{awesome-red}
+
+% Set boolean value for photo/quote/etc
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Project list formatting: consistent spacing and alignment
+\newenvironment{cvprojitems}{%
+  \begin{justify}
+  \begin{itemize}[leftmargin=2ex, itemsep=0.4ex, topsep=0.3ex, parsep=0pt, partopsep=0pt]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{%
+  \end{itemize}
+  \end{justify}
+}
+
+%-------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+%-------------------------------------------------------------------------------
+\name{Ibrar}{Ahmad}
+\position{Embedded Systems Engineer | EEG Hardware \& Biosensors}
+\address{Peshawar, 25000, Pakistan}
+
+\mobile{(+92) 309-8767-341}
+\email{hiibrarahmad@gmail.com}
+\homepage{https://hiibrarahmad.github.io}
+\github{hiibrarahmad}
+\linkedin{hiibrarahmad}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header
+\makecvheader
+
+% Print the footer with page numbers
+\makecvfooter
+  {\today}
+  {Ibrar Ahmad~~~\textperiodcentered~~~Curriculum Vitae}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+% SECTION: Summary
+%-------------------------------------------------------------------------------
+\cvsection{Professional Summary}
+
+\begin{cvparagraph}
+Embedded Hardware Engineer specializing in Biosensor/EEG Hardware Design, High-Speed PCB Design, Signal \& Power Integrity, Firmware Development (C/C++, FreeRTOS, Zephyr RTOS), IoT Systems (ESP32, STM32, nRF52), nRF Connect SDK, Altium Designer, Medical Device Development, Bioelectrode Technology, Hardware-Software Integration, Technical Consultation, R\&D, and JTAG Debugging.
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+% SECTION: Work Experience
+%-------------------------------------------------------------------------------
+\cvsection{Professional Experience}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Biosensor/EEG Hardware Engineer} % Job title
+    {Niura (MindTune Innovations regional office, Pakistan)} % Organization
+    {Wah Cantt, Pakistan} % Location
+    {Mar. 2025 - Present} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Designed and developed EEG hardware and bioelectrode systems focused on stable, high-quality biosignal capture for real-world use}
+        \item {Engineered compact earbud hardware and multilayer PCBs to support both neural sensing and consumer wearable constraints}
+        \item {Developed embedded firmware for real-time EEG acquisition, filtering, and reliable wireless transmission from miniaturized earbuds}
+        \item {Integrated TWS stereo audio features so the device performs normal earbud functions while simultaneously supporting EEG data flow}
+        \item {Improved overall signal quality through hardware tuning, electrode interface optimization, noise reduction, and validation testing}
+        \item {Executed end-to-end hardware verification including bring-up, debugging, performance testing, and iterative prototype refinement}
+        \item {Collaborated across hardware, firmware, and product teams to deliver production-ready designs aligned with medical and quality requirements}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Technical Consultant (Remote/Sessional)} % Job title
+    {Zinovaa} % Organization
+    {Remote} % Location
+    {May 2025 - Present} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Providing expert consultation on embedded systems architecture, hardware design decisions, and firmware optimization strategies}
+        \item {Guiding development teams in selecting appropriate microcontrollers, sensors, and components for IoT and wearable applications}
+        \item {Reviewing and optimizing PCB schematics and layouts for signal integrity, power distribution, and thermal management}
+        \item {Advising on Bluetooth Low Energy (BLE), Wi-Fi, and LoRa implementation for wireless IoT systems using ESP32, STM32, and nRF52}
+        \item {Conducting remote troubleshooting sessions using JTAG debuggers, logic analyzers, and oscilloscopes to resolve complex hardware issues}
+        \item {Ensuring robust hardware-software integration through code reviews, HAL implementation guidance, and RTOS configuration}
+        \item {Providing strategic guidance on design-for-manufacturing (DFM) and design-for-testability (DFT) best practices}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Embedded Hardware Engineer Team Lead} % Job title
+    {Revive Medical Technologies} % Organization
+    {Rawalpindi, Pakistan} % Location
+    {Feb. 2024 - Mar. 2025} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Led the PCB team in schematic design, layout, fabrication, testing, and implementation for embedded hardware projects}
+        \item {Managed BOM creation and component planning while overseeing PCB assembly and printing workflows to meet quality standards}
+        \item {Coordinated with cross-functional engineering teams to deliver hardware milestones on schedule and align with project deliverables}
+        \item {Developed and validated embedded hardware prototypes through structured bring-up, debugging, and verification testing}
+        \item {Built industrial automation simulations in Factory I/O and integrated PLC logic for real-world process-control scenarios}
+        \item {Contributed to process improvement through design reviews, technical documentation, and troubleshooting support across teams}
+        \item {Supported handoff to manufacturing by validating design files, test checklists, and production documentation for repeatable builds}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Education
+%-------------------------------------------------------------------------------
+\clearpage
+\cvsection{Education}
+
+\begin{cventries}
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Bachelor of Science in Electrical Engineering (Computer Electives)} % Degree
+    {COMSATS University Islamabad} % Institution
+    {Islamabad, Pakistan} % Location
+    {Aug. 2019 - Feb. 2024} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Major: Electrical Engineering with specialization in Embedded Systems, Digital Signal Processing, and Power Electronics}
+        \item {Relevant Coursework: Microprocessor Systems, FPGA Design, Control Systems, Digital Image Processing, Data Communication \& Computer Networks, Industrial Automation, Circuit Design}
+        \item {Developed expertise in MATLAB, NI LabVIEW, Proteus, and Altium Designer through academic projects and laboratories}
+        \item {Final Year Project: Smart Door Lock System using ESP32-CAM with optimized image processing and wireless authentication}
+        \item {Gained hands-on experience with ARM Cortex-M, ESP32, STM32, and FPGA development boards}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Higher Secondary School Certificate - Pre-Engineering} % Degree
+    {University College for Boys, Univ. of Peshawar} % Institution
+    {Peshawar, Pakistan} % Location
+    {2017 - 2019} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Studied Mathematics, Physics, Chemistry with focus on analytical and problem-solving skills}
+        \item {Built strong foundation in engineering principles, calculus, mechanics, and scientific methodology}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\vspace{2pt}
+\cventry
+    {Secondary School Certificate - Science Group} % Degree
+    {Islamia Collegiate School} % Institution
+    {Peshawar, Pakistan} % Location
+    {2015 - 2017} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Completed foundational studies in Mathematics, Physics, Chemistry, and Biology}
+        \item {Developed strong academic performance and critical thinking abilities}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Technical Skills
+%-------------------------------------------------------------------------------
+\cvsection{Technical Skills}
+
+\begin{cvskills}
+
+%---------------------------------------------------------
+\cvskill
+    {Embedded Systems} 
+    {ESP32, STM32 (Cortex-M3/M4), nRF52 Series, AVR, i.MX8MM MPU, ARM Cortex Architecture, Bare-Metal \& RTOS Programming}
+
+%---------------------------------------------------------
+\cvskill
+    {Firmware Development} 
+    {C, C++, Embedded C, FreeRTOS, Zephyr RTOS, nRF Connect SDK, HAL/LL Drivers, Bootloader Development, DFU/OTA Updates}
+
+%---------------------------------------------------------
+\cvskill
+    {PCB Design \& CAD Tools} 
+    {Altium Designer, KiCad, Autodesk Eagle, PADS, Proteus, OrCAD, High-Speed \& Multilayer PCB Design (up to 12 layers)}
+
+%---------------------------------------------------------
+\cvskill
+    {Signal \& Power Integrity} 
+    {Impedance Control, Controlled Routing, Ground Plane Optimization, PDN Analysis, SI/PI Simulation, EMI/EMC Compliance}
+
+%---------------------------------------------------------
+\cvskill
+    {Biosensor \& Medical Devices} 
+    {EEG Hardware Design (ADS1299), ECG/PPG Acquisition (MAX86150), Bioelectrode Technology, AFE Design, IEC 60601-1 Compliance}
+
+%---------------------------------------------------------
+\cvskill
+    {Communication Protocols} 
+    {I2C, SPI, UART, USB 2.0/3.0, CAN Bus, BLE 5.x, Wi-Fi (802.11), LoRa, MQTT, WebSocket, Modbus}
+
+%---------------------------------------------------------
+\cvskill
+    {Wireless \& IoT Systems} 
+    {Bluetooth Low Energy (BLE), Nordic nRF52, ESP32 Wi-Fi/BLE, LoRa/LoRaWAN, Wireless Charging (Qi Standard, BQ51003)}
+
+%---------------------------------------------------------
+\cvskill
+    {Industrial Automation} 
+    {Siemens S7-300/S7-1200 PLC, TIA Portal, Factory I/O, Ladder Logic, SCADA Systems, Process Control}
+
+%---------------------------------------------------------
+\cvskill
+    {Manufacturing \& Testing} 
+    {CNC Programming (G-Code), PCB Fabrication, Pick-and-Place Assembly, BOM Management, DFM/DFT, IPC-7351 Standards}
+
+%---------------------------------------------------------
+\cvskill
+    {Hardware Debugging Tools} 
+    {JTAG/SWD Debuggers, Oscilloscopes (up to 500MHz), Logic Analyzers, Spectrum Analyzers, Thermal Cameras, Multimeters}
+
+%---------------------------------------------------------
+\cvskill
+    {Software \& Simulation} 
+    {MATLAB, Simulink, NI LabVIEW, LTspice, ANSYS HFSS, Python (NumPy, SciPy, Matplotlib), Git/GitHub}
+
+%---------------------------------------------------------
+\cvskill
+    {Design Standards \& Compliance} 
+    {IPC-2221, IPC-7351, IEC 60601-1, ISO 13485, RoHS 3, CE Marking, FDA Class II Device Requirements}
+
+%---------------------------------------------------------
+\cvskill
+    {Project Management} 
+    {Agile/Scrum Methodologies, Jira, Confluence, Bitbucket, Cross-functional Team Leadership, Technical Documentation}
+
+%---------------------------------------------------------
+\cvskill
+    {Languages} 
+    {English (Professional), Urdu (Native)}
+
+\end{cvskills}
+
+%-------------------------------------------------------------------------------
+% SECTION: Key Projects
+%-------------------------------------------------------------------------------
+\cvsection{Key Professional Projects}
+
+\begin{cvparagraph}
+
+\textbf{1. Next-Generation Smartwatch with Wireless Charging}
+\begin{cvprojitems}
+    \item Designed complete hardware architecture for advanced wearable featuring nRF5340 dual-core SoC (ARM Cortex-M33).
+    \item Implemented BQ51003 wireless charging receiver with ADP5360 PMIC for optimized power management.
+    \item Integrated MAX86150 for ECG, PPG, and SpO\textsubscript{2} measurements with clinical-grade accuracy.
+    \item Developed dual display system: 1.54" IPS LCD for interactive UI + low-power E-Ink for always-on display.
+    \item Incorporated environmental sensors: BME680 (temperature, humidity, pressure), CCS811 (air-quality monitoring).
+    \item Designed 6-axis ICM-20689 IMU integration for motion tracking and gesture recognition.
+    \item Achieved <30mA average current consumption with 7-day battery life on 300mAh LiPo battery.
+    \item Implemented Nordic BLE 5.2 stack with secure DFU over-the-air firmware updates.
+\end{cvprojitems}
+
+\textbf{2. True Wireless Stereo (TWS) Earbuds with Jieli IC}
+\begin{cvprojitems}
+    \item Developed complete PCB design for TWS earbuds using Jieli Bluetooth 5.0 audio SoC.
+    \item Implemented advanced audio processing with ANC (Active Noise Cancellation) and ENC (Environmental Noise Cancellation).
+    \item Designed compact charging case with wireless charging capability and battery management system.
+    \item Achieved <60ms low-latency audio transmission for gaming and video applications.
+    \item Optimized antenna design for stable Bluetooth connectivity within 10-meter range.
+\end{cvprojitems}
+
+\textbf{3. Smart Earbuds with EEG Sensing}
+\begin{cvprojitems}
+    \item Pioneered innovative design integrating dry-electrode EEG sensors into TWS earbud form factor.
+    \item Developed biopotential acquisition circuit with <1\ensuremath{\mu}V noise floor for in-ear neural signal detection.
+    \item Implemented real-time mood/emotion analysis algorithms using machine learning on embedded MCU.
+    \item Created dynamic audio adjustment system responding to detected emotional states.
+    \item Designed miniaturized PCB with RF isolation between Bluetooth and analog EEG frontend.
+\end{cvprojitems}
+
+\textbf{4. Medical Device Hardware (SDCM-II, DermScope, UV Curing Chamber)}
+\begin{cvprojitems}
+    \item \textit{Stent Drug Coating Machine II (SDCM-II)}: Designed precision motion-control electronics with stepper motor drivers and closed-loop feedback for automated pharmaceutical coating.
+    \item \textit{DermScope}: Developed compact medical imaging device with high-resolution camera interface, LED illumination control, and USB 2.0 data transfer.
+    \item \textit{UV Curing Chamber}: Engineered embedded control system with precise temperature regulation, UV intensity monitoring, and automated curing-cycle management.
+    \item All projects designed with IEC 60601-1 safety isolation and medical-grade components.
+\end{cvprojitems}
+
+\textbf{5. Compact 49\,$\times$\,49 mm NRF Smartwatch}
+\begin{cvprojitems}
+    \item Designed ultra-compact smartwatch PCB with nRF52832 SoC and 0.96" OLED display.
+    \item Implemented aggressive miniaturization techniques including via-in-pad and HDI technology.
+    \item Achieved <2mm total PCB thickness including battery and display assembly.
+    \item Optimized power consumption: <50\ensuremath{\mu}A in deep sleep, <5mA during active BLE connection.
+\end{cvprojitems}
+
+\textbf{6. Athletic Mouthguard Wearable Device}
+\begin{cvprojitems}
+    \item Developed NRF-based wearable embedded in an athletic mouthguard for real-time health monitoring.
+    \item Integrated sensors: temperature, SpO\textsubscript{2}, bite force (FSR), and 3-axis accelerometer for impact detection.
+    \item Designed waterproof and impact-resistant enclosure with biocompatible materials.
+    \item Implemented BLE communication for real-time data streaming to a mobile application.
+    \item Created custom charging dock with pogo-pin interface for battery recharging.
+\end{cvprojitems}
+
+\textbf{7. OpenBCI EEG Data Processing System}
+\begin{cvprojitems}
+    \item Developed custom firmware for ADS1299-based OpenBCI board with 8-channel EEG acquisition.
+    \item Implemented SPI communication protocol achieving 16kSPS sampling rate across all channels.
+    \item Created Python-based data processing pipeline for real-time brainwave analysis (alpha, beta, theta, delta bands).
+    \item Integrated machine learning algorithms for artifact detection and signal classification.
+\end{cvprojitems}
+
+\textbf{8. Custom DFU/OTA Bootloader for nRF52840}
+\begin{cvprojitems}
+    \item Developed secure bootloader for Adafruit nRF52840 Sense enabling over-the-air firmware updates.
+    \item Implemented cryptographic signature verification using mbedTLS library.
+    \item Created dual-bank flash memory management for fail-safe update mechanism.
+    \item Achieved <30-second update time for 512KB firmware images.
+\end{cvprojitems}
+
+\end{cvparagraph}
+
+%-------------------------------------------------------------------------------
+% SECTION: Final Year Project
+%-------------------------------------------------------------------------------
+\cvsection{Final Year Project}
+
+\begin{cventries}
+
+\vspace{2pt}
+\cventry
+    {Team Lead \& Hardware Designer} % Role
+    {Smart Door Lock System} % Project Title
+    {COMSATS University Islamabad} % Institution
+    {Aug. 2022 - Jul. 2023} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Developed integrated smart door lock system using ESP32-CAM and ESP32 for wireless access control and surveillance}
+        \item {Implemented TJpeg library achieving 25 FPS real-time video streaming with optimized image compression}
+        \item {Designed modular locking mechanism compatible with existing doors using solenoid lock and servo-based actuation}
+        \item {Integrated bidirectional audio communication using I2S digital microphone and amplifier circuit}
+        \item {Developed custom authentication system supporting RFID, fingerprint, and mobile app-based unlocking}
+        \item {Created intuitive user interface on 3.5" TFT LCD displaying live camera feed and visitor information}
+        \item {Implemented low-power modes achieving <100mA standby current with instant wake-up capability}
+        \item {Designed PCB with integrated power supply (5V/2A), ESP32 modules, and peripheral interfaces}
+        \item {Successfully demonstrated system with <1-second authentication response time and 99\% recognition accuracy}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Open Source Contributions
+%-------------------------------------------------------------------------------
+\cvsection{Open Source Contributions}
+
+\begin{cventries}
+
+\vspace{2pt}
+\cventry
+    {Maintainer \& Creator} % Role
+    {Custom Altium Component Library} % Project Title
+    {GitHub - Public Repository} % Platform
+    {Ongoing} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Developed comprehensive Altium Designer component library with 500+ components optimized for rapid PCB design}
+        \item {Each component stored in individual file with modular structure for easy integration and version control}
+        \item {Ensured 100\% RoHS 3 compliance with detailed environmental and safety documentation}
+        \item {Designed footprints according to IPC-7351B standards with manufacturing tolerances verified through DRC}
+        \item {Focused on JLCPCB Parts Library compatibility for seamless fabrication and component procurement}
+        \item {Included 3D models for accurate mechanical clearance verification in Altium 3D viewer}
+        \item {Actively maintained with bi-weekly updates adding latest components and fixing reported issues}
+        \item {Received 100+ stars and contributions from embedded systems community worldwide}
+      \end{cvitems}
+    }
+
+\end{cventries}
+
+%-------------------------------------------------------------------------------
+% SECTION: Certifications
+%-------------------------------------------------------------------------------
+\cvsection{Professional Certifications}
+
+\begin{cvhonors}
+
+\cvhonor
+    {PEC Registered Electrical Engineer} % Title
+    {Registration Number: ELECT/107509} % Details
+    {Pakistan Engineering Council (PEC)} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {Certified PCB Designer} % Title
+    {Completion of Altium Education PCB Basic Design Course (Credential: cert\_c8lmf4pd)} % Details
+    {Altium} % Issuer
+    {Sep. 2023} % Year
+
+\cvhonor
+    {Learn Altium Essentials -- Second Edition} % Title
+    {Advanced PCB Design Techniques and Best Practices} % Details
+    {Altium} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {High-Speed \& Multi-layer PCB Design} % Title
+    {Advanced techniques for signal integrity and impedance control} % Details
+    {Online Certification} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {Signal \& Power Integrity Specialist} % Title
+    {Advanced Course on SI/PI Analysis for PCB Designers} % Details
+    {Sintecs Training Program} % Issuer
+    {2024} % Year
+
+\cvhonor
+    {nRF Connect SDK Fundamentals} % Title
+    {Hands-on training in Nordic Semiconductor's IoT platform} % Details
+    {Nordic Semiconductor Academy} % Issuer
+    {2025} % Year
+
+\cvhonor
+    {Introduction to IoT} % Title
+    {Fundamentals of Internet of Things architecture and applications} % Details
+    {Cisco Networking Academy} % Issuer
+    {Mar. 2024} % Year
+
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+% SECTION: Key Achievements
+%-------------------------------------------------------------------------------
+\cvsection{Key Achievements \& Recognition}
+
+\begin{cvhonors}
+
+\cvhonor
+    {Team Leadership} % Category
+    {Led cross-functional team of 5 engineers delivering 10+ medical device projects on time and within budget} % Achievement
+    {} % Organization
+    {2024-2025} % Year
+
+\cvhonor
+    {Process Improvement} % Category
+    {Reduced PCB manufacturing defects by 40\% through implementation of DFM/DFT standards and automated design reviews} % Achievement
+    {} % Organization
+    {2024} % Year
+
+\cvhonor
+    {Freelance Success} % Category
+    {Completed 15+ Upwork projects with 100\% client satisfaction rating and 5.0/5.0 average review score} % Achievement
+    {} % Organization
+    {2024-2025} % Year
+
+\cvhonor
+    {Open Source Impact} % Category
+    {Altium component library received 100+ GitHub stars and adopted by developers in 15+ countries} % Achievement
+    {} % Organization
+    {2024-2025} % Year
+
+\cvhonor
+    {Technical Innovation} % Category
+    {Pioneered integration of EEG sensors into TWS earbud form factor for emotion-responsive audio} % Achievement
+    {} % Organization
+    {2025} % Year
+
+\end{cvhonors}
+
+%-------------------------------------------------------------------------------
+\end{document}

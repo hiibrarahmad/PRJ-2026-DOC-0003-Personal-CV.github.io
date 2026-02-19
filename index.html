@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ibrar Ahmad CV Documentation</title>
+  <meta name="description" content="Documentation for English and Indonesian LaTeX CV builds, VS Code setup, and GitHub workflow." />
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --panel: #ffffff;
+      --text: #172036;
+      --muted: #5a647a;
+      --brand: #d7362f;
+      --brand-dark: #9e1d18;
+      --line: #d9deea;
+      --accent: #0f766e;
+      --shadow: 0 10px 30px rgba(20, 31, 56, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Helvetica Neue", "Noto Sans", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 10% -20%, #ffe8e7 0%, transparent 60%),
+        radial-gradient(800px 500px at 95% 0%, #e8f9f5 0%, transparent 60%),
+        var(--bg);
+      line-height: 1.5;
+    }
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 56px 20px 24px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #fff1f1;
+      color: var(--brand-dark);
+      border: 1px solid #ffd1cf;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    h1 {
+      margin: 12px 0 10px;
+      font-size: clamp(30px, 5vw, 52px);
+      line-height: 1.05;
+    }
+    .lead {
+      max-width: 800px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+    .grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 16px 20px 56px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 20px;
+    }
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+    }
+    .card p, .card li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #f1f4fb;
+      border: 1px solid #dde4f3;
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: #0e214e;
+    }
+    pre {
+      margin: 10px 0 0;
+      border: 1px solid #dde4f3;
+      background: #f8faff;
+      border-radius: 12px;
+      padding: 14px;
+      overflow-x: auto;
+      font-size: 13px;
+      color: #0e214e;
+    }
+    .steps {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px 48px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    a {
+      color: var(--brand-dark);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <span class="badge">LaTeX CV Documentation</span>
+    <h1>Ibrar Ahmad CV<br />Build + Maintenance Guide</h1>
+    <p class="lead">
+      This repository contains two production CV tracks (English and Indonesian), each with isolated LaTeX source,
+      style class, and PDF output. Use this page for setup, build, troubleshooting, and GitHub publishing workflow.
+    </p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Repository Layout</h2>
+      <p>Keep content isolated by language to prevent accidental style/content overlap.</p>
+      <pre>cv_english/
+  Ibrar_Ahmad_CV_fixed (1).tex
+  awesome-cv.cls
+  Ibrar_Ahmad_CV_fixed (1).pdf
+
+cv_indonesian/
+  Ibrar_Ahmad_CV_id.tex
+  awesome-cv.cls
+  Ibrar_Ahmad_CV_id.pdf</pre>
+    </section>
+
+    <section class="card">
+      <h2>Local Prerequisites</h2>
+      <ul class="steps">
+        <li>Install MiKTeX (or TeX Live) with <span class="mono">xelatex</span>.</li>
+        <li>Install VS Code + <strong>LaTeX Workshop</strong> extension.</li>
+        <li>Open repo root in VS Code and build from target language folder.</li>
+      </ul>
+      <pre>xelatex --version</pre>
+    </section>
+
+    <section class="card">
+      <h2>VS Code Build Workflow</h2>
+      <ol class="steps">
+        <li>Open <span class="mono">cv_english/Ibrar_Ahmad_CV_fixed (1).tex</span> or <span class="mono">cv_indonesian/Ibrar_Ahmad_CV_id.tex</span>.</li>
+        <li>Press <span class="mono">Ctrl+Alt+B</span> to build.</li>
+        <li>Run <span class="mono">LaTeX Workshop: View LaTeX PDF</span> for live preview.</li>
+        <li>Save file after edits, rebuild, and verify alignment/page breaks.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Manual Build Commands</h2>
+      <p>Use PowerShell if VS Code recipe fails:</p>
+      <pre>cd cv_english
+xelatex -interaction=nonstopmode "Ibrar_Ahmad_CV_fixed (1).tex"
+
+cd ..\cv_indonesian
+xelatex -interaction=nonstopmode Ibrar_Ahmad_CV_id.tex</pre>
+    </section>
+
+    <section class="card">
+      <h2>Troubleshooting</h2>
+      <ul class="steps">
+        <li><strong>Build not running:</strong> confirm <span class="mono">xelatex</span> is in PATH.</li>
+        <li><strong>PDF not refreshing:</strong> save file, rebuild, reopen PDF viewer.</li>
+        <li><strong>Missing packages:</strong> install from MiKTeX Console and rebuild.</li>
+        <li><strong>Orphan headings:</strong> add controlled section breaks (e.g., <span class="mono">\clearpage</span>) in .tex where needed.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>GitHub Setup</h2>
+      <ol class="steps">
+        <li>Push repository to GitHub.</li>
+        <li>Enable Pages: <span class="mono">Settings &gt; Pages &gt; Deploy from branch</span>.</li>
+        <li>Select <span class="mono">main</span> + root folder.</li>
+        <li>Use issue templates in <span class="mono">.github/ISSUE_TEMPLATE/</span> for bug/feature/question flow.</li>
+      </ol>
+      <p>
+        Also read <a href="./README.md">README.md</a> for full project notes and maintenance rules.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Owner:</strong> Ibrar Ahmad | <strong>Purpose:</strong> Professional CV publishing and maintenance.</p>
+  </footer>
+</body>
+</html>
