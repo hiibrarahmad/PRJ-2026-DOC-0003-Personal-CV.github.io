@@ -33,8 +33,8 @@
 
 | Language | Preview | Download |
 |:--------:|:-------:|:--------:|
-| 🇬🇧 **English** | ![English CV Preview](**PASTE_YOUR_ENGLISH_CV_IMAGE_LINK_HERE**) | [📥 Download PDF](cv_english/Ibrar_Ahmad_CV_fixed%20(1).pdf) |
-| 🇮🇩 **Indonesian** | ![Indonesian CV Preview](**PASTE_YOUR_INDONESIAN_CV_IMAGE_LINK_HERE**) | [📥 Download PDF](cv_indonesian/Ibrar_Ahmad_CV_id.pdf) |
+| 🇬🇧 **English** | ![English CV Preview](https://github.com/hiibrarahmad/PRJ-2026-DOC-0003-Personal-CV.github.io/blob/main/cv_english/assets/image.png) | [📥 Download PDF](cv_english/Ibrar_Ahmad_CV_fixed%20(1).pdf) |
+| 🇮🇩 **Indonesian** | ![Indonesian CV Preview](https://github.com/hiibrarahmad/PRJ-2026-DOC-0003-Personal-CV.github.io/blob/main/cv_indonesian/assets/image.png) | [📥 Download PDF](cv_indonesian/Ibrar_Ahmad_CV_id.pdf) |
 
 </div>
 
