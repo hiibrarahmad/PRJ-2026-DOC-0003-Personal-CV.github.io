@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,50:16213e,100:0f3460&height=200&section=header&text=Ibrar%20Ahmad%20—%20CV&fontSize=48&fontColor=e94560&fontAlignY=38&desc=Professional%20Curriculum%20Vitae%20·%20LaTeX%20Powered&descSize=18&descAlignY=60&descColor=a8b2d8" width="100%"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,50:1e293b,100:334155&height=220&section=header&text=Ibrar%20Ahmad%20—%20CV&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Professional%20Curriculum%20Vitae%20·%20LaTeX%20Powered&descSize=20&descAlignY=62&descColor=cbd5e1&animation=fadeIn" width="100%"/>
 
 <!-- BADGES -->
 ![CV Version](https://img.shields.io/badge/CV%20Version-2026-e94560?style=for-the-badge&logo=latex&logoColor=white)
